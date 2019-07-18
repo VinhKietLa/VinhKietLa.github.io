@@ -1,0 +1,133 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: auto 0;
+  font-size: 1em;
+  font-family: 'Roboto', arial, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+h2 {
+  border-bottom: 2px solid #525252;
+}
+/*---Navigation---*/
+.main-nav {
+  color: white;
+}
+.main-nav li {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: white;
+  text-decoration: none;
+	text-transform: uppercase;
+}
+.name a,
+.main-nav a {
+  padding: 10px 10px;
+  display: block;
+}
+/*---Layout Containers---*/
+.wrapper{
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: auto;
+  max-width: 80%;
+}
+.mini-title {
+  color: #999999;
+  font-style: italic;
+}
+.Me {
+  font-size: 3em;
+}
+.myself {
+  margin-top: 20px;
+  width:200px;
+  height:200px;
+  border:solid 2px black;
+  border-radius: 50%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listStyle{
+color: #5E5C5C;
+}
+
+.main-footer {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.second-footer{
+  margin-top:50px;
+  margin-bottom:0;
+}
+
+/*sticky footer*/
+.wrap {
+		min-height: calc(100vh - 89px);
+}
+
+@media (min-width: 700px) {
+/*float clearfix*/
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/*navigation media styles*/
+.main-header{
+  background-color: white;
+}
+.name,
+.main-nav,
+.main-nav li {
+  display: inline-block;
+  background-color: black;
+}
+.name {
+  margin-right: 50px;
+  font-size: 3.0em;
+}
+.main-nav li {
+  margin-right: 10px;
+  font-size: 2.0em;
+}
+/*main content styles*/
+.container {
+  width:50%;
+  max-width: 1250px;
+}
+.Me {
+  font-size: 3.5em;
+}
+.myself {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+  display:block;
+}
+.main-footer{
+margin:auto;
+}
+.second-footer{
+  margin-top:50px;
+  margin-bottom:0;
+}
+}

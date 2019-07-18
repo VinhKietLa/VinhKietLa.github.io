@@ -1,0 +1,252 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+  font-family: 'varela Round', sans-serif;
+}
+
+a {
+	color:red;
+	text-decoration: none;
+}
+
+img {
+  width:100%;
+  height: auto;
+	max-height: 400px;
+	max-width: 600px;
+  display:block;
+}
+
+h2 {
+	color:red;
+	margin-top:1em;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 1px;
+}
+
+p {
+font-size: 1em;
+margin-top:1px;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+.banner {
+	background-color: grey;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 10px;
+	background-image:
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+   url("Img/picturehouse.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:348px;
+	/*box-shadow: 0px 0px 2px 2px black;*/
+}
+
+.headline {
+	margin-bottom: 5px;
+	margin-top:2px;
+}
+
+.headline,
+.subheadline {
+	color:white;
+}
+
+/* ---- Navigation ---- */
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: grey;
+	text-transform: uppercase;
+}
+.name a,
+.main-nav a {
+  padding: 10px 10px;
+  display: block;
+}
+
+/* ---- Layout Containers ---- */
+.main-header {
+	background: white;
+  padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.container {
+  padding-top: 6em;
+  margin: 0 auto;
+}
+
+.headingforcontent,
+.main-content {
+	margin: 0 auto;
+	width:90%;
+  text-align: center;
+}
+
+.hoverlinks1 {
+	color:black;
+}
+
+.hoverlinks {
+  color: grey;
+  display: block;
+}
+
+
+/*Image overlay properties*/
+.container1 {
+  position:relative;
+}
+.overlay {
+  position:absolute;
+  top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100%;
+  width:100%;
+  max-height: 400px;
+	max-width: 600px;
+  margin:0 auto;
+  opacity:0;
+  transition: 0.5s ease;
+  background-color: red;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cineworld,.upcreek,.dinosaurs,.picturerestaurant,.aviationexperience,
+.greenwichgolf {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer {
+  text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+/*sticky footer*/
+.wrap {
+  min-height: calc(100vh - 89px);
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+
+/*navigation media styles*/
+	.main-header {
+		background-color: white;
+		padding-left: 10px;
+	}
+	.name,
+	.main-nav,
+	.main-nav li {
+		display: inline-block;
+		background-color: white;
+	}
+	.name {
+		margin-right: 50px;
+		font-size: 3.0em;
+	}
+	.main-nav li {
+		margin-right: 10px;
+		font-size: 1.25em;
+	}
+  /*Image overlay properties*/
+  .overlay {
+    max-height: 390px;
+  	max-width: 600px;
+    height:auto;
+    width:100%;
+  }
+
+  .cineworld,.upcreek,.dinosaurs,.picturerestaurant,
+  .aviationexperience,.greenwichgolf {
+    width:100%;
+    height: auto;
+  	max-height: 390px;
+  	max-width: 600px;
+    display:block;
+  }
+
+/*main content styles*/
+	.banner {
+		background-color: grey;
+		text-align: center;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin-bottom: 2em;
+	}
+	.container {
+		width:100%;
+		margin: 0 auto;
+	}
+
+	.main-content {
+    width:75%;
+    margin: 0 auto;
+    max-width: 1100px;
+	}
+/*Flexbox properties for main-content styles*/
+.main-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.col {
+  flex: 1 50%;
+  padding: 1em;
+}
+
+@media (min-width: 1150px) {
+
+	.container,
+	.main-content {
+		width:70%;
+		max-width: 1350px;
+		margin: 0 auto;
+
+	}
+}

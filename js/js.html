@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>My ToDo List</title>
+<link rel="stylesheet" href="js.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- This is HTML for the clock display only -->
+<div class="main">
+  <div class="badge">
+    <p id="dmy">date</p>
+  </div>
+  <div class="clock">
+    <span id="hour">02</span>
+    <span id="minute">30</span>
+    <span id="second">23</span>
+  </div>
+</div>
+
+<!-- Beginning of the ToDo List-->
+<div class = "section">
+<h1> To Do List</h1>
+<p>Log your tasks and lets get things done!</p>
+<div class="list">
+
+<input type="text" class="addInput" placeholder="Enter a new task">
+<button class="addTask"> Add Task </button>
+
+<h2>Tasks:</h2>
+ <ul class = "MyListItems">
+   <li>GYM</li>
+   <li>CODE</li>
+   <li>LAUNDRY</li>
+   <li>FOOD SHOPPING</li>
+ </ul>
+</div>
+  <div>
+  <h3>Tasks completed: <span id="completed"></span></h3>
+  </div>
+</p>
+<h3>Reminders: </h3>
+<p id="timer">______________</p>
+<p id="taskIndex">__________</p>
+</div>
+</body>
+<!--Javascript src tags-->
+<script src="js.js"></script>
+<script src="clock.js"></script>
+</html>

@@ -1,0 +1,199 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+  font-family: 'varela Round', sans-serif;
+}
+
+a {
+	color:red;
+	text-decoration: none;
+}
+
+img {
+  width:190px;
+	padding:5px 5px;
+}
+
+h2 {
+	color:red;
+	margin-top: 1px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.banner {
+	background-color: grey;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.headline {
+	margin-bottom: 5px;
+	margin-top:2px;
+}
+
+.headline,
+.subheadline {
+	color:white;
+}
+
+/* ---- Navigation ---- */
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: grey;
+	text-transform: uppercase;
+}
+.name a,
+.main-nav a {
+  padding: 10px 10px;
+  display: block;
+}
+/* ---- Layout Containers ---- */
+
+.main-header {
+	background: white;
+  padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.main-footer {
+  text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+
+.container1 {
+  padding-top: 1em;
+	padding-left:1em;
+	padding-right:1em;
+  text-align: center;
+}
+
+.container {
+	padding-left:1em;
+	padding-right:1em;
+}
+
+/*Form styles*/
+fieldset {
+  border-style: none;
+}
+form {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  background: lightgrey;
+  border-radius: 16px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  padding-right: 10px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: red;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid red;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+
+/*sticky footer*/
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+
+/*navigation media styles*/
+	.main-header{
+		background-color: white;
+		padding-left: 10px;
+	}
+	.name,
+	.main-nav,
+	.main-nav li {
+		display: inline-block;
+		background-color: white;
+	}
+	.name {
+		margin-right: 50px;
+		font-size: 3.0em;
+	}
+	.main-nav li {
+		margin-right: 10px;
+		font-size: 1.25em;
+	}
+
+/*main content styles*/
+	.banner {
+		background-color: grey;
+		text-align: center;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin-bottom: 2em;
+	}
+	.container {
+		width:80%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1150px) {
+
+	.container {
+		width:90%;
+		max-width: 1300px;
+	}
+
+}

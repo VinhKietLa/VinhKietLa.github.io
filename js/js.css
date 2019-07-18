@@ -1,0 +1,162 @@
+/*Font style*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Orbitron&display=swap';
+
+*{padding:0;
+  margin:0;
+  box-sizing: border-box; }
+
+/*clock css styles ONLY*/
+.main {
+  background: #525b56;
+  width: 400px;
+  margin: 50px auto;
+  height: 175px;
+  position:relative;
+  padding:25px;
+  border:solid 1px #040c0e;
+  border-radius: 10px;
+}
+
+.badge {
+  background: #a4978e;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  width:95px;
+  position: absolute;
+  top: -15px;
+  left: 38%;
+}
+
+.clock {
+  background: #be9063;
+  text-align: center;
+  font-size: 55px;
+  height: 100%;
+  padding-top: 20px;
+  font-family: Orbitron;
+  border-radius: 4px;
+}
+#dmy {
+  color:#34675c;
+  padding: 1px 0;
+}
+
+/*Main Base styles for TodoList*/
+body {
+  background-color: ##FFFCF6;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #1C1C1C;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+p{
+  padding: 10px 0 ;
+  color: #525b56;
+}
+
+h2 {
+  padding: 25px 0 ;
+}
+
+h3 {
+  padding-top: 20px;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  margin-left: 5px;
+  cursor: pointer;
+}
+/*TASK:LI/button styles, aligns buttons to the left equally*/
+li {
+  padding: .45em .5em;
+  margin-bottom: .35em;
+  display: flex ;
+  align-items: center;
+  margin-right: 5px;
+}
+li button:first-child {
+  margin-left: auto;
+  background: #a4978e;
+  color: white;
+}
+.down{
+  background: #132226;
+  color: white;
+
+}
+.remove {
+  background: #be9063;
+  color: white;
+}
+.MyListItems{
+  padding:1px;
+  margin:1px;
+}
+li button {
+  font-size: .75em;
+  padding: .5em .65em;
+}
+ul li:hover {
+  background: red;
+  transition-duration: 0.4s;
+  font-weight: bold;
+}
+
+ul li.objectives {
+  text-decoration: line-through;
+  background: #888;
+  color: #fff;
+}
+
+
+/*class styles*/
+.section {
+  margin: 60px;
+  padding: 10px;
+  border: solid 1px #040c0e;
+  border-radius: 5px;
+}
+.checkbox {
+  height: 25px;
+  width:25px;
+  margin-left: 5px;
+}
+.addInput {
+  color: #132226;
+}
+.addtask {
+  width: 90px;
+  background: #525b56;
+  color: white;
+
+}
+.addtask,.addInput,.remove,.down,.up, .reminder {
+  font-size: 16px;
+  border-radius: 3px;
+  border: solid 2px #525b56;
+}
+
+@media (min-width: 768px) {
+
+body {
+  background-color: ##FFFCF6;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #1C1C1C;
+  padding: .45em 2.65em 3em;
+  max-width: 1000px;
+}

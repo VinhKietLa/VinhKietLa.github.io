@@ -1,0 +1,268 @@
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.6;
+	color: #3a3a3a;
+  font-family: 'varela Round', sans-serif;
+}
+
+a {
+	color:red;
+	text-decoration: none;
+}
+
+img {
+  width:100%;
+  height: auto;
+	max-height: 390px;
+	max-width: 600px;
+}
+
+h2 {
+	color:red;
+	margin-top:0.5em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+.banner {
+	background-color: grey;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 10px;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+   url("Img/cuttysark.jpg");
+  background-size: cover;
+  height:348px;
+  /*box-shadow: 0px 0px 2px 2px black;*/
+}
+
+.headline {
+  padding-top: 70px;
+	margin-bottom: 5px;
+	margin-top:2px;
+}
+
+.headline,
+.subheadline {
+	color:white;
+}
+
+
+/* ---- Navigation ---- */
+.name,
+.main-nav li {
+	text-align: center;
+	background: #fff;
+	margin-top: 0px;
+	margin-bottom: 6px;
+  padding-right: 4.2px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: grey;
+	text-transform: uppercase;
+}
+.name a,
+.main-nav a {
+  padding: 10px 10px;
+  display: block;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	background: white;
+  padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.container {
+  margin: 0 auto;
+}
+.main-content {
+margin: 0 auto;
+width:90%;
+padding-bottom: 30px;
+}
+
+
+/*Image hover properties*/
+.imagecontainer {
+  width:100%;
+  height: auto;
+	max-height: 390px;
+	max-width: 600px;
+  overflow:hidden;
+}
+
+.imageitem img {
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+}
+.imagecontainer:hover .imageitem img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.main-footer {
+  text-align: center;
+	padding: 2em 0;
+	background: #d9e4ea;
+}
+/*sticky footer*/
+.wrap {
+  min-height: calc(100vh - 89px);
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+
+/*float clearfix*/
+	.clearfix::after {
+	  content: " ";
+		display: table;
+		clear: both;
+	}
+
+/*navigation media styles*/
+.name,
+.main-nav li {
+  float:left;
+}
+
+.main-nav {
+  float:left;
+}
+
+.main-header {
+  background-color: white;
+  padding-left: 10px;
+}
+.name {
+  margin-right: 50px;
+  font-size: 3.0em;
+}
+.main-nav li {
+  margin-right: 10px;
+  font-size: 1.25em;
+}
+
+/*main content styles*/
+.banner {
+  background-color: grey;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+.container {
+  width:85%;
+  margin: 0 auto;
+}
+
+.main-content {
+  max-width: 1050px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+
+}
+
+.imagecontainer {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5em;
+}
+
+p {
+text-align: left;
+}
+
+h2 {
+  padding-top: 1.2em;
+}
+
+}
+
+@media (min-width: 1150px) {
+/*Float clearfix*/
+  .clearfix::after {
+    content: " ";
+    display:table;
+    clear:both;
+  }
+  /*main content styles*/
+
+  .container,
+	.main-content {
+		width:70%;
+  }
+  .main-content {
+    max-width: 1350px;
+  }
+
+/*Floated containers under main-content*/
+  .container1,
+  .container3,
+  .container5,
+  .container7 {
+    width:50%;
+    float:left;
+    clear:left;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .container2,
+  .container4,
+  .container6,
+  .container8{
+    width:50%;
+    float:right;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .imagecontainer {
+    width:100%;
+    height: auto;
+  	max-height: 390px;
+  	max-width: 600px;
+    overflow:hidden;
+
+  }
+}
+
+@media (min-width: 1583px) {
+/*navigation media styles*/
+.name {
+  margin-right: 50px;
+  font-size: 3.0em;
+}
+.main-nav li {
+  margin-top: 31.5px;
+  margin-right: 10px;
+  font-size: 1.25em;
+}
+/*main content styles*/
+
+.container,
+.main-content {
+  width:70%;
+}
+.main-content {
+  max-width: 1600px;
+}
+
+
+}
