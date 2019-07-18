@@ -133,4 +133,4 @@ function timeIt() {
 function userInput() {
   var userNumber = prompt('Enter a reminder in seconds');
   timeleft = parseInt(userNumber);
-  }
+}
