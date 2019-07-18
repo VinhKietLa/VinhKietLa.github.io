@@ -14,8 +14,6 @@ addItemButton.addEventListener('click',() =>{
   let label = document.createElement('LABEL');
   li.appendChild(label);
   li.textContent = addInput.value.toUpperCase();
-  label.value = li.textContent;
-
   attachListItemButtons(li);
   ul.appendChild(li);
   checkBox();
@@ -38,10 +36,6 @@ function attachListItemButtons (li) {
     remove.className = 'remove';
     remove.textContent = 'Remove';
     li.appendChild(remove);
-  let reminder = document.createElement('button');
-      reminder.className = 'reminder';
-      reminder.textContent ='Reminder';
-      li.appendChild(reminder);
   let checkbox = document.createElement('input');
     checkbox.className = 'checkbox';
     checkbox.type = 'checkbox';
@@ -74,11 +68,6 @@ listUL.addEventListener('click',(event) => {
       ul.insertBefore(nextLi, li);
     }
   }
-  if (event.target.className === 'reminder'){
-    let li = event.target.parentNode;
-    let ul = li.parentNode;
-    userInput(setInterval(timeIt,1000));
-}
   if(event.target.className ==='checkbox'){
     let li = event.target.parentNode;
     let ul = li.parentNode;
