@@ -44,12 +44,12 @@ body {
   max-width: 80%;
 }
 
-.projectOverlay,.projectOverlay2 {
+.projectOverlay,.projectOverlay2, .projectOverlay3 {
   position: relative;
   width:100%;
   margin: auto;
 }
-.greenwich, .js {
+.greenwich, .js, .quiz {
   display: block;
   margin: auto;
   width:300px;
@@ -57,7 +57,7 @@ body {
   border: 1px solid black;
 }
 
-.overlay, .overlay2 {position: absolute;
+.overlay, .overlay2, .overlay3 {position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -75,7 +75,10 @@ opacity: 1;
 .projectOverlay2:hover .overlay2{
 opacity: 1;
 }
-.text, .text2 {
+.projectOverlay2:hover .overlay3{
+opacity: 1;
+}
+.text, .text2, .text3 {
   color: white;
   font-size: 20px;
   position: absolute;
