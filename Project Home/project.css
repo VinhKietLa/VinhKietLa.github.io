@@ -57,7 +57,7 @@ body {
   border: 1px solid black;
 }
 
-.overlay, .overlay2, .overlay3 {position: absolute;
+.overlay, .overlay2, .overlay3, .overlay4 {position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -75,10 +75,13 @@ opacity: 1;
 .projectOverlay2:hover .overlay2{
 opacity: 1;
 }
-.projectOverlay2:hover .overlay3{
+.projectOverlay3:hover .overlay3{
 opacity: 1;
 }
-.text, .text2, .text3 {
+.projectOverlay4:hover .overlay4{
+opacity: 1;
+}
+.text, .text2, .text3, .text4 {
   color: white;
   font-size: 20px;
   position: absolute;
