@@ -44,7 +44,7 @@ body {
   max-width: 80%;
 }
 
-.projectOverlay,.projectOverlay2, .projectOverlay3 {
+.projectOverlay,.projectOverlay2, .projectOverlay3, .projectOverlay4 {
   position: relative;
   width:100%;
   margin: auto;
